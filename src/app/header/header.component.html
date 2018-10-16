@@ -1,0 +1,50 @@
+<!-- Navigation -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand" routerLink="/">Recipe Book</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+	        aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarsExample05">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item" routerLinkActive="active">
+				<a class="nav-link" routerLink="/recipes">Recipes</a>
+			</li>
+			<li class="nav-item" routerLinkActive="active">
+				<a class="nav-link" routerLink="/shopping-list">Shopping List</a>
+			</li>
+		</ul>
+
+		<ul class="navbar-nav">
+			<ng-template [ngIf]="!authService.isAuthenticated()">
+				<li class="nav-item" routerLinkActive="active">
+					<a class="nav-link" routerLink="/signup">Register</a>
+				</li>
+				<li class="nav-item" routerLinkActive="active">
+					<a class="nav-link" routerLink="/signin">Login</a>
+				</li>
+			</ng-template>
+
+			<ng-template [ngIf]="authService.isAuthenticated()">
+				<li class="nav-item">
+					<a class="nav-link" (click)="onGetData()">Fetch Data</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" (click)="onSaveData()">Save Data</a>
+				</li>
+			</ng-template>
+
+			<li
+				class="nav-item"
+				style="cursor: pointer"
+				*ngIf="authService.isAuthenticated()">
+				<a class="nav-link" (click)="onLogOut()">Logout</a>
+			</li>
+		</ul>
+		<form class="form-inline my-2 my-md-0">
+			<input class="form-control" type="text" placeholder="Search">
+		</form>
+	</div>
+</nav>

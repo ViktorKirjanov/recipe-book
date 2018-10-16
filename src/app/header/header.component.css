@@ -1,0 +1,17 @@
+nav {
+	background-color: #ffffff;
+	margin-bottom: 10px;
+}
+
+nav ul li a {
+	color: #b8cb3b;
+}
+
+nav ul li.nav-item.active a{
+	background-color: #b8cb3b;
+	color: #fff;
+}
+
+a{
+	cursor: pointer;
+}

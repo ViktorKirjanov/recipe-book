@@ -1,0 +1,29 @@
+.card-title {
+	color: #b8cb3b;
+	font-size: 18px;
+	display: block;
+	margin: 5px 0px;
+}
+
+.card {
+	border-radius: 0px;
+	/*border: 0px;*/
+}
+
+.card:hover {
+	/*background-color: #f8f9fa;*/
+	border-color: #b8cb3b;
+}
+
+img {
+	/*border-radius: 100%;*/
+	/*margin: 5px;*/
+}
+
+a {
+	cursor: pointer;
+}
+
+.card.active{
+	border-color: #b8cb3b;
+}

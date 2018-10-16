@@ -1,0 +1,19 @@
+a {
+	cursor: pointer;
+}
+
+#icon-bar{
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+.icon{
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.icon:hover path{
+	fill:#819420;
+	color:#819420;
+}

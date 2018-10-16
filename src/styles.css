@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*body {*/
+/*padding-top: 100px;*/
+/*}*/
+
+h1, h2, h3, h4, h5 {
+	color: #b8cb3b;
+}
+
+/*.button:active,*/
+/*button:active,*/
+/*.button:focus,*/
+/*button:focus,*/
+/*.button:hover,*/
+/*button:hover {*/
+/*border: 1px solid;*/
+/*box-shadow:none !important;*/
+/*outline:0px !important;*/
+/*}*/
+
+/*.btn.active.focus,*/
+/*.btn.active:focus,*/
+/*.btn.focus,*/
+/*.btn.focus:active,*/
+/*.btn:active:focus,*/
+/*.btn:focus {*/
+/*outline: thin dotted;*/
+/*outline-offset: -2px;*/
+/*}*/
+
+a:hover {
+	text-decoration: none;
+}
+
+/*.btn-success:not(:disabled):not(.disabled):active:focus,*/
+/*.show > .btn-success.dropdown-toggle:focus {*/
+/*box-shadow: none;*/
+/*background-color: gold;*/
+/*border-color: gold;*/
+/*}*/
+
+/*.btn-success {*/
+/*background-color: yellowgreen;*/
+/*border-color: yellowgreen;*/
+/*}*/
+
+/*.btn-success:hover,*/
+/*.btn-success:active,*/
+/*.btn-success:focus,*/
+/*.btn-success:active:focus {*/
+/*background-color: gold;*/
+/*border-color: gold;*/
+/*}*/
+
+/*.badge-success {*/
+/*background-color: yellowgreen;*/
+/*}*/
+
+.dropdown-menu {
+	margin: 0px;
+	border-radius: 0px;
+}
+
+.btn {
+	border: 0px;
+	border-radius: 0px;
+	box-shadow: none !important;
+	outline: 0px !important;
+}
+
+.form-control {
+	border-radius: 0px;
+}
+
+.btn-success {
+	color: #FFFFFF;
+	background-color: #b8cb3b;
+	border-color: #b8cb3b;
+}
+
+.btn-success:hover {
+	background-color: #819420 !important;
+}
+
+
+.bg-image-full {
+	height: 100px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+	border: 1px solid red;
+}

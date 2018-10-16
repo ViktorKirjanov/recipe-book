@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="col-12">
+		<app-shopping-edit></app-shopping-edit>
+		<hr>
+		<div class="list-group">
+			<div
+			   class="list-group-item list-group-item-action"
+			   *ngFor="let ingredient of ingredients; let i = index">
+				{{ ingredient.name }}
+				<span class="ingredient-amount-counter float-right">
+					<span class="edit" (click)="onEditItem(i)">(edit)</span>
+					<span class="amount-up">-</span>
+					<span class="amount">{{ ingredient.amount }}</span>
+					<span class="amount-down"(click) = "onAddAmount()" >+</span>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>

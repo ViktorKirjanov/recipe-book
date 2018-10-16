@@ -1,0 +1,30 @@
+.ingredient-amount-counter .amount-up,
+.ingredient-amount-counter .amount-down{
+	background-color: #b8cb3b;
+	color: #fff;
+	margin: 0px 5px;
+	border-radius: 20px;
+	height: 26px;
+	width: 26px;
+	font-size: 16px;
+	display: inline-block;
+	border: none;
+	text-align: center;
+}
+
+.amount{
+	width: 30px;
+	display: inline-block;
+	text-align: center;
+}
+
+.ingredient-amount-counter .amount-up:hover,
+.ingredient-amount-counter .amount-down:hover{
+	background-color: #819420;
+}
+
+.edit{
+	cursor: pointer;
+}
+
+
