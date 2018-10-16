@@ -17,7 +17,7 @@ export class AuthGuardService implements CanActivate, CanLoad {
 
 
 	canLoad(route: Route): Observable<boolean> | Promise<boolean> | boolean {
-		console.log("xxx");
+		console.log('xxx');
 		const isAuthenticated = this.authService.isAuthenticated();
 		if (isAuthenticated) {
 			return true;
